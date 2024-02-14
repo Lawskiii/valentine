@@ -1,0 +1,50 @@
+.title p{
+
+font-family: 'Playfair Display', serif;
+  color: rgb(	246,	187,	207);
+  font-size: 40px;
+}
+
+.container{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.title{
+margin-bottom: 30px;
+  
+}
+p{
+  margin: 0;
+  padding: 0;
+} 
+
+.yes-no{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  width: 200px;
+  
+}
+
+.yes-no p{
+  font-family: 'Playfair Display', serif;
+  color: rgb(	246,	187,	207);
+  font-size: 35px;
+}
+
+.yes-no button{
+  cursor: pointer;
+  background: none;
+  border-width: 0px;
+}
+
+.yes-no p:hover{
+  text-decoration: underline  ;
+}
+

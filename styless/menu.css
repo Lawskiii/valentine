@@ -1,0 +1,80 @@
+/*
+GENERIC STRUCTURE
+*/
+
+body{
+  background-color: rgb(243, 148, 202);
+  padding-bottom: 1000px;
+  padding-top: 200px;
+}
+
+.container-gift-content p{
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  color: rgb(253,228,242);
+}
+
+.title-choose{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.title-choose p{
+  padding: 0;
+  margin: 0;
+  font-size: 100px;
+  font-family: 'Playfair Display', serif;
+  color: rgb(253,228,242);
+}
+
+.title-choose img {
+  margin: 0;
+  width: 130px;
+  height: 50%;
+  
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-gift-content{
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 50px;
+  row-gap: 75px;
+  width: 1115px;
+  height: 100%;
+  justify-content: space-between;
+  
+}
+
+.gift{
+  width: 300px; 
+  height: 300px;
+  
+}
+
+.gift img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgb(241, 183, 217) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.gift p {
+  text-align: center;
+}
+
+.gift-button {
+  background: none;
+  border-width: 0;
+}

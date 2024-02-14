@@ -1,0 +1,36 @@
+body{
+  padding-top: 7100px;
+}
+
+.question-1{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-1 button{
+  width: 200px;
+  height: 200px;
+  background: none;
+  border-width: 0;
+  margin: 20px;
+  
+}
+
+
+.question-1 img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.question-1 p{
+  font-family: 'Roboto', sans-serif;
+  font-size:100px;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(34, 33, 36);
+}

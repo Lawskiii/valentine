@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date</title>
+
+  <link rel="stylesheet" href="styless/date.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <div class="container-text-content">
+      
+      <p style="font-size: 55px; margin: 0;"> <u>Where</u> would you want to date?</p> 
+      <img style="width: 100px;" src="img/1.gif" alt="">
+    </div>
+    <div class="container-img-content">
+      <div>
+        <button onclick="display(1, 'Sanur')" class="container-img-button" >
+            <img src="img/date-1.jpg" alt="">
+        </button>
+        <p>Sanur</p>
+      </div>
+      
+      <div>
+        <button onclick="display(2, 'Living World')" class="container-img-button" >
+            <img src="img/date-2.jpg" alt="">
+        </button>
+        <p>Living World</p>
+      </div>
+      <div>
+        <button onclick="display(3, 'Mixue')" class="container-img-button" >
+            <img src="img/date-3.jpg" alt="">
+        </button>
+        <p>Mixue</p>
+      </div>
+      
+    </div>
+    
+    
+    
+    <div class="container-img-content">
+      <div>
+        <button onclick="display(4, 'Mall Bali Galleria')" class="container-img-button" >
+            <img src="img/date-4.jpg" alt="">
+        </button>
+        <p>Mall Bali Galleria</p>
+      </div>
+      
+      <div>
+        <button onclick="display(5, 'Gacoan')" class="container-img-button" >
+            <img src="img/date-5.png" alt="">
+        </button>
+        <p>Gacoan</p>
+      </div>
+      <div>
+        <button onclick="display(6, 'Study Date')" class="container-img-button" >
+            <img src="img/date-6.png" alt="">
+        </button>
+        <p>Study Date</p>
+      </div>
+
+      
+
+    </div>
+    
+
+    
+    
+  
+    
+    </div>
+  </div>
+
+  <div>
+    <img src="" alt="">
+  </div>
+</body>
+<script>
+  let destObj = document.querySelector('.destination');
+  let contObj = document.querySelector('.container')
+  function display(num, dest){
+    console.log(num)
+    if (num == 5 || num == 6)
+    {
+      contObj.innerHTML = "";
+
+      destObj.innerHTML = `<img class="destination-img" src="img/date-${num}.png" alt=""> <div class="destination-text"> <p class="title">${dest} (booked!)</p> <p class="desc">Saturday, 16 Februari 2024 <3</p> </div>`
+    }else{
+      contObj.innerHTML = "";
+
+      destObj.innerHTML = `<img class="destination-img" src="img/date-${num}.jpg" alt=""> <div class="destination-text"> <p class="title"> ${dest} (booked!)</p> <p class="desc">Saturday, 16 Februari 2024 <3</p> </div>`
+    }
+    
+  }
+</script>
+
+</html>

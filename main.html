@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine</title>
+
+  <link rel="stylesheet" href="generic.css">
+  <link rel="stylesheet" href="styless/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="gif-image"><img style="width: 100px;" src="img/1.gif" alt=""></div>
+    <div class="title"><p>will you be my valentine?</p></div>
+    <div class="yes-no">
+
+      <button onclick="yes();"><p class="desc-yes">yes</p></button>
+
+      <button onclick="no();"><p class="desc-no">no</p></button>
+      
+    </div>
+  </div>  
+</body>
+</html>
+
+<script>
+  let noCount = 0;
+  let noReplacement = ['u sure?', 'u making me sad', 'last chance', ';(']
+
+  function no(){
+    let noObj = document.body.querySelector('.desc-no');
+    let yesObj = document.body.querySelector('.desc-yes');
+    let gifObj = document.body.querySelector('.gif-image');
+    
+    let currentFontSize = 35;
+
+    if (noCount<= 11){
+      noCount++;
+      
+
+      //change yes
+      yesObj.style.fontSize = `${currentFontSize + (noCount+1) *3}px`;
+
+      //change no
+      noObj.style.fontSize = `${currentFontSize - (noCount+1)*3}px`;
+    }
+
+    if (noCount < 5){
+      noObj.innerHTML = noReplacement[(noCount)-1]; gifObj.innerHTML = `<img style="width: 100px;" src="img/${(noCount)+1}.gif" alt="">`
+      console.log(noCount)
+    }
+    
+    
+    
+  }
+
+  function yes(){
+    
+  }
+</script>
